@@ -21,9 +21,9 @@
     "chai": "~1.9.1",
     "sinonjs-built": "~1.7.3",
     "sinon-chai": "~2.5.0",
-    "ember-mocha-adapter": "https://github.com/WMeldon/ember-mocha-adapter.git#qunit"
+    "ember-mocha-adapter": "https://github.com/WMeldon/ember-mocha-adapter.git#qunit",
 
-
+    "ember-easyForm": "http://builds.dockyard.com.s3.amazonaws.com/ember-easyForm/canary/shas/add6a40a68c8b081557a9011cf99ea255414e1b1/ember-easyForm.js"
 
   }
 }

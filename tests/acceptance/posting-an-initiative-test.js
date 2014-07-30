@@ -16,6 +16,8 @@ test('Successfully', function(){
   visit('/').then(function() {
     click( $("a:contains('Start a new initiative')") ).then(function() {
       expect(currentURL()).to.equal('/initiatives/new');
+      // fill in title after user clicks the link
+      fillIn('div.title input', 'Public health clinic');
     });
   });
 });
