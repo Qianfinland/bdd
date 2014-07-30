@@ -2,7 +2,7 @@ import startApp from 'bdd/tests/helpers/start-app';
 import Resolver from 'bdd/tests/helpers/resolver';
 
 var App;
-
+var expect = chai.expect
 suite('Posting an initiative', {
   setup: function(){
     App = startApp();
@@ -12,11 +12,10 @@ suite('Posting an initiative', {
   }
 });
 
-
 test('Successfully', function(){
   visit('/').then(function() {
     click( $("a:contains('Start a new initiative')") ).then(function() {
-      expect(currentPath()).to.equal('/initiatives/new');
+      expect(currentURL()).to.equal('/initiatives/new');
     });
   });
 });
