@@ -11,6 +11,19 @@
     "ember-cli-shims": "stefanpenner/ember-cli-shims#0.0.2",
     "ember-load-initializers": "stefanpenner/ember-load-initializers#0.0.2",
     "ember-qunit-notifications": "^0.0.3",
-    "ember-cli-test-loader": "rjackson/ember-cli-test-loader#0.0.2"
+    "ember-cli-test-loader": "rjackson/ember-cli-test-loader#0.0.2",
+    "ember-data": "1.0.0-beta.8",
+    
+    "ic-ajax": "~1.x",
+    "ember-easyForm": "http://builds.dockyard.com.s3.amazonaws.com/ember-easyForm/canary/ember-easyForm.min.js",
+
+    "mocha": "~1.17.0",
+    "chai": "~1.9.1",
+    "sinonjs-built": "~1.7.3",
+    "sinon-chai": "~2.5.0",
+    "ember-mocha-adapter": "https://github.com/WMeldon/ember-mocha-adapter.git#qunit"
+
+
+
   }
 }
