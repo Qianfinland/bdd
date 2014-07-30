@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bdd</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/bdd.css">
+  </head>
+  <body>
+    <script>
+      window.BddENV = {{ENV}};
+      window.EmberENV = window.BddENV.EmberENV;
+    </script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/bdd.js"></script>
+    <script>
+      window.Bdd = require('bdd/app')['default'].create(BddENV.APP);
+    </script>
+  </body>
+</html>
