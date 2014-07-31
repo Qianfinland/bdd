@@ -21,11 +21,6 @@ test('Successfully', function(){
       //add reminder of form-filling
       fillIn('div.description textarea', 'Allocate compensation money to create a local public health clinic');
       click('form input[type=submit]').then(function() {
-        // Ideally I'd prefer to:
-        //   expect(currentURL()).to.equal('/initiatives/' + initiativeID);
-        // but haven't found an ember equivalent of active record's Post.first.id,
-        // nor a way to get at the local store and use store.all('initiative').objectAt(0).get('id').
-        // Also can't get a record count yet
         expect(currentPath()).to.equal('initiatives.show');
         expect(find('.title').text()).to.equal('Public health clinic');
         expect(find('.description').text()).to.equal('Allocate compensation money to create a local public health clinic');
